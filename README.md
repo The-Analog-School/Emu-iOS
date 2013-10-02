@@ -6,6 +6,7 @@ Sample app that helps plan social events.
 ## Setup
 
 * This project uses Cocoapods. You must run a `pod install` before use.
+* You must include your own copy of the Parse.framework. Visit http://parse.com to download that.
 * You must supply a `keys.plist` file that contains the following key-value pairs to authenticate with the Parse SDK and the Foursquare API. Make sure to put your own keys in the file below.
 
 ```
@@ -25,3 +26,4 @@ Sample app that helps plan social events.
 </plist>
 
 ```
+
