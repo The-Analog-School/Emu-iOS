@@ -1,0 +1,700 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		740986F917FBE99A00FE1AB2 /* EmuEventParse.m in Sources */ = {isa = PBXBuildFile; fileRef = 740986F817FBE99A00FE1AB2 /* EmuEventParse.m */; };
+		740986FC17FBE9F200FE1AB2 /* EmuVenueParse.m in Sources */ = {isa = PBXBuildFile; fileRef = 740986FB17FBE9F200FE1AB2 /* EmuVenueParse.m */; };
+		740986FF17FBEAC700FE1AB2 /* EmuVoteParse.m in Sources */ = {isa = PBXBuildFile; fileRef = 740986FE17FBEAC700FE1AB2 /* EmuVoteParse.m */; };
+		7409870217FC737600FE1AB2 /* FoursquareNetworkCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7409870117FC737600FE1AB2 /* FoursquareNetworkCommunicator.m */; };
+		7409870517FC8B7300FE1AB2 /* SelectEventLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7409870417FC8B7300FE1AB2 /* SelectEventLocationViewController.m */; };
+		7409870917FCAD0900FE1AB2 /* keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7409870617FCA55500FE1AB2 /* keys.plist */; };
+		7449933D17FB0B1300EC00C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7449933C17FB0B1300EC00C7 /* Foundation.framework */; };
+		7449933F17FB0B1300EC00C7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7449933E17FB0B1300EC00C7 /* CoreGraphics.framework */; };
+		7449934117FB0B1300EC00C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7449934017FB0B1300EC00C7 /* UIKit.framework */; };
+		7449934717FB0B1300EC00C7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7449934517FB0B1300EC00C7 /* InfoPlist.strings */; };
+		7449934917FB0B1300EC00C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7449934817FB0B1300EC00C7 /* main.m */; };
+		7449934D17FB0B1300EC00C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7449934C17FB0B1300EC00C7 /* AppDelegate.m */; };
+		7449935017FB0B1300EC00C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7449934E17FB0B1300EC00C7 /* Main.storyboard */; };
+		7449935317FB0B1300EC00C7 /* EmuTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7449935217FB0B1300EC00C7 /* EmuTabBarController.m */; };
+		7449935517FB0B1300EC00C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7449935417FB0B1300EC00C7 /* Images.xcassets */; };
+		7449935C17FB0B1300EC00C7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7449935B17FB0B1300EC00C7 /* XCTest.framework */; };
+		7449935D17FB0B1300EC00C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7449933C17FB0B1300EC00C7 /* Foundation.framework */; };
+		7449935E17FB0B1300EC00C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7449934017FB0B1300EC00C7 /* UIKit.framework */; };
+		7449936617FB0B1300EC00C7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7449936417FB0B1300EC00C7 /* InfoPlist.strings */; };
+		7449936817FB0B1300EC00C7 /* EmuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7449936717FB0B1300EC00C7 /* EmuTests.m */; };
+		7487168A17FB38A400D2CF12 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7487168917FB38A400D2CF12 /* SettingsViewController.m */; };
+		7487168D17FB39F800D2CF12 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7487168C17FB39F800D2CF12 /* ProfileViewController.m */; };
+		7487169017FB3A9D00D2CF12 /* UIViewController+Emu.m in Sources */ = {isa = PBXBuildFile; fileRef = 7487168F17FB3A9D00D2CF12 /* UIViewController+Emu.m */; };
+		7487169417FB3F9F00D2CF12 /* Signin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7487169317FB3F9F00D2CF12 /* Signin.storyboard */; };
+		7487169917FB401C00D2CF12 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7487169617FB401C00D2CF12 /* SignInViewController.m */; };
+		7487169A17FB401C00D2CF12 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7487169817FB401C00D2CF12 /* SignUpViewController.m */; };
+		7487169D17FB40E100D2CF12 /* EmuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7487169C17FB40E100D2CF12 /* EmuViewController.m */; };
+		748716AB17FB4CD900D2CF12 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 748716A217FB4CD900D2CF12 /* AudioToolbox.framework */; };
+		748716AC17FB4CD900D2CF12 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 748716A317FB4CD900D2CF12 /* CFNetwork.framework */; };
+		748716AD17FB4CD900D2CF12 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 748716A417FB4CD900D2CF12 /* CoreLocation.framework */; };
+		748716AE17FB4CD900D2CF12 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 748716A517FB4CD900D2CF12 /* libz.1.1.3.dylib */; };
+		748716AF17FB4CD900D2CF12 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 748716A617FB4CD900D2CF12 /* MobileCoreServices.framework */; };
+		748716B017FB4CD900D2CF12 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 748716A717FB4CD900D2CF12 /* QuartzCore.framework */; };
+		748716B117FB4CD900D2CF12 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 748716A817FB4CD900D2CF12 /* Security.framework */; };
+		748716B217FB4CD900D2CF12 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 748716A917FB4CD900D2CF12 /* StoreKit.framework */; };
+		748716B317FB4CD900D2CF12 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 748716AA17FB4CD900D2CF12 /* SystemConfiguration.framework */; };
+		748716B917FB58F800D2CF12 /* EmuUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 748716B817FB58F800D2CF12 /* EmuUtilities.m */; };
+		748716C417FB6CCA00D2CF12 /* EmuUserParse.m in Sources */ = {isa = PBXBuildFile; fileRef = 748716C317FB6CCA00D2CF12 /* EmuUserParse.m */; };
+		BD45C3B116E743658ECDBB1F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65132D67082B498DB0996901 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7449935F17FB0B1300EC00C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7449933117FB0B1300EC00C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7449933817FB0B1300EC00C7;
+			remoteInfo = Emu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		65132D67082B498DB0996901 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		740986F717FBE99A00FE1AB2 /* EmuEventParse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmuEventParse.h; sourceTree = "<group>"; };
+		740986F817FBE99A00FE1AB2 /* EmuEventParse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmuEventParse.m; sourceTree = "<group>"; };
+		740986FA17FBE9F200FE1AB2 /* EmuVenueParse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmuVenueParse.h; sourceTree = "<group>"; };
+		740986FB17FBE9F200FE1AB2 /* EmuVenueParse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmuVenueParse.m; sourceTree = "<group>"; };
+		740986FD17FBEAC700FE1AB2 /* EmuVoteParse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmuVoteParse.h; sourceTree = "<group>"; };
+		740986FE17FBEAC700FE1AB2 /* EmuVoteParse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmuVoteParse.m; sourceTree = "<group>"; };
+		7409870017FC737600FE1AB2 /* FoursquareNetworkCommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoursquareNetworkCommunicator.h; sourceTree = "<group>"; };
+		7409870117FC737600FE1AB2 /* FoursquareNetworkCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoursquareNetworkCommunicator.m; sourceTree = "<group>"; };
+		7409870317FC8B7300FE1AB2 /* SelectEventLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectEventLocationViewController.h; sourceTree = "<group>"; };
+		7409870417FC8B7300FE1AB2 /* SelectEventLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectEventLocationViewController.m; sourceTree = "<group>"; };
+		7409870617FCA55500FE1AB2 /* keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = keys.plist; sourceTree = "<group>"; };
+		7449933917FB0B1300EC00C7 /* Emu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7449933C17FB0B1300EC00C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7449933E17FB0B1300EC00C7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7449934017FB0B1300EC00C7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7449934417FB0B1300EC00C7 /* Emu-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Emu-Info.plist"; sourceTree = "<group>"; };
+		7449934617FB0B1300EC00C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7449934817FB0B1300EC00C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7449934A17FB0B1300EC00C7 /* Emu-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Emu-Prefix.pch"; sourceTree = "<group>"; };
+		7449934B17FB0B1300EC00C7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7449934C17FB0B1300EC00C7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7449934F17FB0B1300EC00C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7449935117FB0B1300EC00C7 /* EmuTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmuTabBarController.h; sourceTree = "<group>"; };
+		7449935217FB0B1300EC00C7 /* EmuTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmuTabBarController.m; sourceTree = "<group>"; };
+		7449935417FB0B1300EC00C7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7449935A17FB0B1300EC00C7 /* EmuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7449935B17FB0B1300EC00C7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		7449936317FB0B1300EC00C7 /* EmuTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EmuTests-Info.plist"; sourceTree = "<group>"; };
+		7449936517FB0B1300EC00C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7449936717FB0B1300EC00C7 /* EmuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmuTests.m; sourceTree = "<group>"; };
+		7487168817FB38A400D2CF12 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		7487168917FB38A400D2CF12 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		7487168B17FB39F800D2CF12 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		7487168C17FB39F800D2CF12 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		7487168E17FB3A9D00D2CF12 /* UIViewController+Emu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Emu.h"; sourceTree = "<group>"; };
+		7487168F17FB3A9D00D2CF12 /* UIViewController+Emu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Emu.m"; sourceTree = "<group>"; };
+		7487169317FB3F9F00D2CF12 /* Signin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Signin.storyboard; sourceTree = "<group>"; };
+		7487169517FB401C00D2CF12 /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
+		7487169617FB401C00D2CF12 /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
+		7487169717FB401C00D2CF12 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		7487169817FB401C00D2CF12 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		7487169B17FB40E100D2CF12 /* EmuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmuViewController.h; sourceTree = "<group>"; };
+		7487169C17FB40E100D2CF12 /* EmuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmuViewController.m; sourceTree = "<group>"; };
+		748716A217FB4CD900D2CF12 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		748716A317FB4CD900D2CF12 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		748716A417FB4CD900D2CF12 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		748716A517FB4CD900D2CF12 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		748716A617FB4CD900D2CF12 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		748716A717FB4CD900D2CF12 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		748716A817FB4CD900D2CF12 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		748716A917FB4CD900D2CF12 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		748716AA17FB4CD900D2CF12 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		748716B717FB58F800D2CF12 /* EmuUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmuUtilities.h; sourceTree = "<group>"; };
+		748716B817FB58F800D2CF12 /* EmuUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmuUtilities.m; sourceTree = "<group>"; };
+		748716BA17FB5A1D00D2CF12 /* EmuModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmuModel.h; sourceTree = "<group>"; };
+		748716BC17FB5B5E00D2CF12 /* EmuUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmuUser.h; sourceTree = "<group>"; };
+		748716BD17FB5BB900D2CF12 /* EmuEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmuEvent.h; sourceTree = "<group>"; };
+		748716BE17FB61DC00D2CF12 /* EmuVenue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmuVenue.h; sourceTree = "<group>"; };
+		748716BF17FB640B00D2CF12 /* EmuVote.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmuVote.h; sourceTree = "<group>"; };
+		748716C217FB6CCA00D2CF12 /* EmuUserParse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmuUserParse.h; sourceTree = "<group>"; };
+		748716C317FB6CCA00D2CF12 /* EmuUserParse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmuUserParse.m; sourceTree = "<group>"; };
+		89149FC69E504256A191A928 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7449933617FB0B1300EC00C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				748716AB17FB4CD900D2CF12 /* AudioToolbox.framework in Frameworks */,
+				748716AC17FB4CD900D2CF12 /* CFNetwork.framework in Frameworks */,
+				748716AD17FB4CD900D2CF12 /* CoreLocation.framework in Frameworks */,
+				748716AE17FB4CD900D2CF12 /* libz.1.1.3.dylib in Frameworks */,
+				748716AF17FB4CD900D2CF12 /* MobileCoreServices.framework in Frameworks */,
+				748716B017FB4CD900D2CF12 /* QuartzCore.framework in Frameworks */,
+				748716B117FB4CD900D2CF12 /* Security.framework in Frameworks */,
+				748716B217FB4CD900D2CF12 /* StoreKit.framework in Frameworks */,
+				748716B317FB4CD900D2CF12 /* SystemConfiguration.framework in Frameworks */,
+				7449933F17FB0B1300EC00C7 /* CoreGraphics.framework in Frameworks */,
+				7449934117FB0B1300EC00C7 /* UIKit.framework in Frameworks */,
+				7449933D17FB0B1300EC00C7 /* Foundation.framework in Frameworks */,
+				BD45C3B116E743658ECDBB1F /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7449935717FB0B1300EC00C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7449935C17FB0B1300EC00C7 /* XCTest.framework in Frameworks */,
+				7449935E17FB0B1300EC00C7 /* UIKit.framework in Frameworks */,
+				7449935D17FB0B1300EC00C7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7449933017FB0B1300EC00C7 = {
+			isa = PBXGroup;
+			children = (
+				7449934217FB0B1300EC00C7 /* Emu */,
+				7449936117FB0B1300EC00C7 /* EmuTests */,
+				7449933B17FB0B1300EC00C7 /* Frameworks */,
+				7449933A17FB0B1300EC00C7 /* Products */,
+				89149FC69E504256A191A928 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		7449933A17FB0B1300EC00C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7449933917FB0B1300EC00C7 /* Emu.app */,
+				7449935A17FB0B1300EC00C7 /* EmuTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7449933B17FB0B1300EC00C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				748716A217FB4CD900D2CF12 /* AudioToolbox.framework */,
+				748716A317FB4CD900D2CF12 /* CFNetwork.framework */,
+				748716A417FB4CD900D2CF12 /* CoreLocation.framework */,
+				748716A517FB4CD900D2CF12 /* libz.1.1.3.dylib */,
+				748716A617FB4CD900D2CF12 /* MobileCoreServices.framework */,
+				748716A717FB4CD900D2CF12 /* QuartzCore.framework */,
+				748716A817FB4CD900D2CF12 /* Security.framework */,
+				748716A917FB4CD900D2CF12 /* StoreKit.framework */,
+				748716AA17FB4CD900D2CF12 /* SystemConfiguration.framework */,
+				7449933C17FB0B1300EC00C7 /* Foundation.framework */,
+				7449933E17FB0B1300EC00C7 /* CoreGraphics.framework */,
+				7449934017FB0B1300EC00C7 /* UIKit.framework */,
+				7449935B17FB0B1300EC00C7 /* XCTest.framework */,
+				65132D67082B498DB0996901 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7449934217FB0B1300EC00C7 /* Emu */ = {
+			isa = PBXGroup;
+			children = (
+				7449934B17FB0B1300EC00C7 /* AppDelegate.h */,
+				7449934C17FB0B1300EC00C7 /* AppDelegate.m */,
+				748716B717FB58F800D2CF12 /* EmuUtilities.h */,
+				748716B817FB58F800D2CF12 /* EmuUtilities.m */,
+				7409870017FC737600FE1AB2 /* FoursquareNetworkCommunicator.h */,
+				7409870117FC737600FE1AB2 /* FoursquareNetworkCommunicator.m */,
+				7449934E17FB0B1300EC00C7 /* Main.storyboard */,
+				7487169317FB3F9F00D2CF12 /* Signin.storyboard */,
+				7487169117FB3AA300D2CF12 /* Categories */,
+				7487169217FB3F8600D2CF12 /* View Controllers */,
+				748716BB17FB5B1C00D2CF12 /* Models */,
+				7449935417FB0B1300EC00C7 /* Images.xcassets */,
+				7449934317FB0B1300EC00C7 /* Supporting Files */,
+			);
+			path = Emu;
+			sourceTree = "<group>";
+		};
+		7449934317FB0B1300EC00C7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7409870617FCA55500FE1AB2 /* keys.plist */,
+				7449934417FB0B1300EC00C7 /* Emu-Info.plist */,
+				7449934517FB0B1300EC00C7 /* InfoPlist.strings */,
+				7449934817FB0B1300EC00C7 /* main.m */,
+				7449934A17FB0B1300EC00C7 /* Emu-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7449936117FB0B1300EC00C7 /* EmuTests */ = {
+			isa = PBXGroup;
+			children = (
+				7449936717FB0B1300EC00C7 /* EmuTests.m */,
+				7449936217FB0B1300EC00C7 /* Supporting Files */,
+			);
+			path = EmuTests;
+			sourceTree = "<group>";
+		};
+		7449936217FB0B1300EC00C7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7449936317FB0B1300EC00C7 /* EmuTests-Info.plist */,
+				7449936417FB0B1300EC00C7 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7487169117FB3AA300D2CF12 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				7487168E17FB3A9D00D2CF12 /* UIViewController+Emu.h */,
+				7487168F17FB3A9D00D2CF12 /* UIViewController+Emu.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		7487169217FB3F8600D2CF12 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7487169B17FB40E100D2CF12 /* EmuViewController.h */,
+				7487169C17FB40E100D2CF12 /* EmuViewController.m */,
+				7487169E17FB422400D2CF12 /* Navigation */,
+				7487169F17FB422B00D2CF12 /* Sign In */,
+				7487168B17FB39F800D2CF12 /* ProfileViewController.h */,
+				7487168C17FB39F800D2CF12 /* ProfileViewController.m */,
+				7409870317FC8B7300FE1AB2 /* SelectEventLocationViewController.h */,
+				7409870417FC8B7300FE1AB2 /* SelectEventLocationViewController.m */,
+				7487168817FB38A400D2CF12 /* SettingsViewController.h */,
+				7487168917FB38A400D2CF12 /* SettingsViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		7487169E17FB422400D2CF12 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				7449935117FB0B1300EC00C7 /* EmuTabBarController.h */,
+				7449935217FB0B1300EC00C7 /* EmuTabBarController.m */,
+			);
+			name = Navigation;
+			sourceTree = "<group>";
+		};
+		7487169F17FB422B00D2CF12 /* Sign In */ = {
+			isa = PBXGroup;
+			children = (
+				7487169517FB401C00D2CF12 /* SignInViewController.h */,
+				7487169617FB401C00D2CF12 /* SignInViewController.m */,
+				7487169717FB401C00D2CF12 /* SignUpViewController.h */,
+				7487169817FB401C00D2CF12 /* SignUpViewController.m */,
+			);
+			name = "Sign In";
+			sourceTree = "<group>";
+		};
+		748716BB17FB5B1C00D2CF12 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				748716BA17FB5A1D00D2CF12 /* EmuModel.h */,
+				748716BC17FB5B5E00D2CF12 /* EmuUser.h */,
+				748716C217FB6CCA00D2CF12 /* EmuUserParse.h */,
+				748716C317FB6CCA00D2CF12 /* EmuUserParse.m */,
+				748716BD17FB5BB900D2CF12 /* EmuEvent.h */,
+				740986F717FBE99A00FE1AB2 /* EmuEventParse.h */,
+				740986F817FBE99A00FE1AB2 /* EmuEventParse.m */,
+				748716BE17FB61DC00D2CF12 /* EmuVenue.h */,
+				740986FA17FBE9F200FE1AB2 /* EmuVenueParse.h */,
+				740986FB17FBE9F200FE1AB2 /* EmuVenueParse.m */,
+				748716BF17FB640B00D2CF12 /* EmuVote.h */,
+				740986FD17FBEAC700FE1AB2 /* EmuVoteParse.h */,
+				740986FE17FBEAC700FE1AB2 /* EmuVoteParse.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7449933817FB0B1300EC00C7 /* Emu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7449936B17FB0B1300EC00C7 /* Build configuration list for PBXNativeTarget "Emu" */;
+			buildPhases = (
+				A9477BD30E404A7C8E719859 /* Check Pods Manifest.lock */,
+				7449933517FB0B1300EC00C7 /* Sources */,
+				7449933617FB0B1300EC00C7 /* Frameworks */,
+				7449933717FB0B1300EC00C7 /* Resources */,
+				A8693CFADEEB4DDF82E7B1EB /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Emu;
+			productName = Emu;
+			productReference = 7449933917FB0B1300EC00C7 /* Emu.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7449935917FB0B1300EC00C7 /* EmuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7449936E17FB0B1300EC00C7 /* Build configuration list for PBXNativeTarget "EmuTests" */;
+			buildPhases = (
+				7449935617FB0B1300EC00C7 /* Sources */,
+				7449935717FB0B1300EC00C7 /* Frameworks */,
+				7449935817FB0B1300EC00C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7449936017FB0B1300EC00C7 /* PBXTargetDependency */,
+			);
+			name = EmuTests;
+			productName = EmuTests;
+			productReference = 7449935A17FB0B1300EC00C7 /* EmuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7449933117FB0B1300EC00C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Mobiquity;
+				TargetAttributes = {
+					7449935917FB0B1300EC00C7 = {
+						TestTargetID = 7449933817FB0B1300EC00C7;
+					};
+				};
+			};
+			buildConfigurationList = 7449933417FB0B1300EC00C7 /* Build configuration list for PBXProject "Emu" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7449933017FB0B1300EC00C7;
+			productRefGroup = 7449933A17FB0B1300EC00C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7449933817FB0B1300EC00C7 /* Emu */,
+				7449935917FB0B1300EC00C7 /* EmuTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7449933717FB0B1300EC00C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7409870917FCAD0900FE1AB2 /* keys.plist in Resources */,
+				7487169417FB3F9F00D2CF12 /* Signin.storyboard in Resources */,
+				7449935517FB0B1300EC00C7 /* Images.xcassets in Resources */,
+				7449934717FB0B1300EC00C7 /* InfoPlist.strings in Resources */,
+				7449935017FB0B1300EC00C7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7449935817FB0B1300EC00C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7449936617FB0B1300EC00C7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A8693CFADEEB4DDF82E7B1EB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9477BD30E404A7C8E719859 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7449933517FB0B1300EC00C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7487169917FB401C00D2CF12 /* SignInViewController.m in Sources */,
+				7449935317FB0B1300EC00C7 /* EmuTabBarController.m in Sources */,
+				7449934D17FB0B1300EC00C7 /* AppDelegate.m in Sources */,
+				7487169017FB3A9D00D2CF12 /* UIViewController+Emu.m in Sources */,
+				7449934917FB0B1300EC00C7 /* main.m in Sources */,
+				740986FF17FBEAC700FE1AB2 /* EmuVoteParse.m in Sources */,
+				7487168A17FB38A400D2CF12 /* SettingsViewController.m in Sources */,
+				740986F917FBE99A00FE1AB2 /* EmuEventParse.m in Sources */,
+				7409870517FC8B7300FE1AB2 /* SelectEventLocationViewController.m in Sources */,
+				740986FC17FBE9F200FE1AB2 /* EmuVenueParse.m in Sources */,
+				748716B917FB58F800D2CF12 /* EmuUtilities.m in Sources */,
+				7487169A17FB401C00D2CF12 /* SignUpViewController.m in Sources */,
+				7487169D17FB40E100D2CF12 /* EmuViewController.m in Sources */,
+				7409870217FC737600FE1AB2 /* FoursquareNetworkCommunicator.m in Sources */,
+				748716C417FB6CCA00D2CF12 /* EmuUserParse.m in Sources */,
+				7487168D17FB39F800D2CF12 /* ProfileViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7449935617FB0B1300EC00C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7449936817FB0B1300EC00C7 /* EmuTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7449936017FB0B1300EC00C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7449933817FB0B1300EC00C7 /* Emu */;
+			targetProxy = 7449935F17FB0B1300EC00C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7449934517FB0B1300EC00C7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7449934617FB0B1300EC00C7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7449934E17FB0B1300EC00C7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7449934F17FB0B1300EC00C7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7449936417FB0B1300EC00C7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7449936517FB0B1300EC00C7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7449936917FB0B1300EC00C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7449936A17FB0B1300EC00C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7449936C17FB0B1300EC00C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89149FC69E504256A191A928 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/christopherconstable/Development/The\\ Analog\\ School/Mobiquity/Emu",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Emu/Emu-Prefix.pch";
+				INFOPLIST_FILE = "Emu/Emu-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7449936D17FB0B1300EC00C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89149FC69E504256A191A928 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/christopherconstable/Development/The\\ Analog\\ School/Mobiquity/Emu",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Emu/Emu-Prefix.pch";
+				INFOPLIST_FILE = "Emu/Emu-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7449936F17FB0B1300EC00C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Emu.app/Emu";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Emu/Emu-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "EmuTests/EmuTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		7449937017FB0B1300EC00C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Emu.app/Emu";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Emu/Emu-Prefix.pch";
+				INFOPLIST_FILE = "EmuTests/EmuTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7449933417FB0B1300EC00C7 /* Build configuration list for PBXProject "Emu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7449936917FB0B1300EC00C7 /* Debug */,
+				7449936A17FB0B1300EC00C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7449936B17FB0B1300EC00C7 /* Build configuration list for PBXNativeTarget "Emu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7449936C17FB0B1300EC00C7 /* Debug */,
+				7449936D17FB0B1300EC00C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7449936E17FB0B1300EC00C7 /* Build configuration list for PBXNativeTarget "EmuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7449936F17FB0B1300EC00C7 /* Debug */,
+				7449937017FB0B1300EC00C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7449933117FB0B1300EC00C7 /* Project object */;
+}
