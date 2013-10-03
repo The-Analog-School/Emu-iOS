@@ -174,4 +174,8 @@
     [self.locationPicker.mapView setRegion:MKCoordinateRegionMake(locationCenter, locationSpan) animated:animated];
 }
 
+- (IBAction)cancelWasPressed:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 @end

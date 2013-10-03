@@ -18,6 +18,7 @@
 		7429D65317FDA7C200FE0E48 /* SelectLocationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7429D65217FDA7C200FE0E48 /* SelectLocationCell.xib */; };
 		7429D65617FDB44C00FE0E48 /* EditEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7429D65517FDB44C00FE0E48 /* EditEventViewController.m */; };
 		7429D65C17FDBA4F00FE0E48 /* SubmitNewEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7429D65B17FDBA4F00FE0E48 /* SubmitNewEventViewController.m */; };
+		7429D65F17FDC4A900FE0E48 /* AddPresenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7429D65E17FDC4A900FE0E48 /* AddPresenterViewController.m */; };
 		7449933D17FB0B1300EC00C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7449933C17FB0B1300EC00C7 /* Foundation.framework */; };
 		7449933F17FB0B1300EC00C7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7449933E17FB0B1300EC00C7 /* CoreGraphics.framework */; };
 		7449934117FB0B1300EC00C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7449934017FB0B1300EC00C7 /* UIKit.framework */; };
@@ -84,6 +85,8 @@
 		7429D65517FDB44C00FE0E48 /* EditEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditEventViewController.m; sourceTree = "<group>"; };
 		7429D65A17FDBA4F00FE0E48 /* SubmitNewEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubmitNewEventViewController.h; sourceTree = "<group>"; };
 		7429D65B17FDBA4F00FE0E48 /* SubmitNewEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubmitNewEventViewController.m; sourceTree = "<group>"; };
+		7429D65D17FDC4A900FE0E48 /* AddPresenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPresenterViewController.h; sourceTree = "<group>"; };
+		7429D65E17FDC4A900FE0E48 /* AddPresenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPresenterViewController.m; sourceTree = "<group>"; };
 		7449933917FB0B1300EC00C7 /* Emu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7449933C17FB0B1300EC00C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7449933E17FB0B1300EC00C7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -175,6 +178,8 @@
 		7429D65717FDB45400FE0E48 /* Add Event */ = {
 			isa = PBXGroup;
 			children = (
+				7429D65D17FDC4A900FE0E48 /* AddPresenterViewController.h */,
+				7429D65E17FDC4A900FE0E48 /* AddPresenterViewController.m */,
 				7409870317FC8B7300FE1AB2 /* SelectEventLocationViewController.h */,
 				7409870417FC8B7300FE1AB2 /* SelectEventLocationViewController.m */,
 				7429D65417FDB44C00FE0E48 /* EditEventViewController.h */,
@@ -499,6 +504,7 @@
 				7429D65C17FDBA4F00FE0E48 /* SubmitNewEventViewController.m in Sources */,
 				7487169917FB401C00D2CF12 /* SignInViewController.m in Sources */,
 				7449935317FB0B1300EC00C7 /* EmuTabBarController.m in Sources */,
+				7429D65F17FDC4A900FE0E48 /* AddPresenterViewController.m in Sources */,
 				7449934D17FB0B1300EC00C7 /* AppDelegate.m in Sources */,
 				7429D65617FDB44C00FE0E48 /* EditEventViewController.m in Sources */,
 				7487169017FB3A9D00D2CF12 /* UIViewController+Emu.m in Sources */,

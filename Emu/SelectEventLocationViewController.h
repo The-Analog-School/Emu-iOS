@@ -14,4 +14,6 @@
 
 @property (weak, nonatomic) IBOutlet LocationPickerView *locationPicker;
 
+- (IBAction)cancelWasPressed:(id)sender;
+
 @end
