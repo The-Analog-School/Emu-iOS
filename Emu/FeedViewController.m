@@ -11,7 +11,6 @@
 #import "EmuEvent.h"
 #import <SVProgressHUD.h>
 
-#import "UnscheduledEventCell.h"
 #import <AFNetworking/UIImageView+AFNetworking.h>
 
 @interface FeedViewController ()
@@ -29,6 +28,7 @@
     if (self) {
         // Custom initialization
     }
+
     return self;
 }
 
@@ -83,7 +83,10 @@
     UnscheduledEventCell *cell = [tableView dequeueReusableCellWithIdentifier:@"EventCell"];
     id<EmuEvent> event = [self.unscheduledEvents objectAtIndex:indexPath.row];
     
-    [cell.eventImage setImageWithURL:event.venue.photoUrl placeholderImage:[UIImage imageNamed:@""]];
+    cell.delegate = self;
+    
+    [cell.eventImage setImageWithURL:event.venue.photoUrl];
+    cell.eventImage.backgroundColor = [UIColor redColor];
     cell.eventImage.layer.cornerRadius = 3.0;
     cell.eventImage.clipsToBounds = YES;
     
@@ -103,6 +106,19 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+#pragma mark - UnscheduledEventCellDelegate
+
+- (void)unscheduledEventCellVoteButtonWasPressed:(UnscheduledEventCell *)cell
+{
+    NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
+    id<EmuEvent> event = [self.unscheduledEvents objectAtIndex:indexPath.row];
+    
+    [[EmuUtilities sharedUtilities] addVoteToEvent:event
+                                        completion:^(BOOL success, NSError *__autoreleasing *error) {
+                                           // TODO: Update UI
+                                        }];
 }
 
 @end

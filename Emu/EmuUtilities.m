@@ -133,4 +133,41 @@
                                                       }];
 }
 
+- (void)addVoteToEvent:(id<EmuEvent>)event
+            completion:(RequestCompletionBlock)completionBlock
+{
+    EmuEventParse *eventParse = (EmuEventParse *)event;
+    PFRelation *votesRelation = [eventParse relationforKey:@"votes"];
+    
+    PFQuery *query = [votesRelation query];
+    
+    EmuUserParse *user = (EmuUserParse *)[EmuUtilities currentUser];
+    [query whereKey:@"user" equalTo:user.parseUser];
+    [query countObjectsInBackgroundWithBlock:^(int number, NSError *error) {
+        if (number == 0) {
+            EmuVoteParse *newVote = [EmuVoteParse object];
+            newVote.user = [EmuUtilities currentUser];
+            newVote.event = event;
+            
+            [newVote saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+                if (succeeded) {
+                    [votesRelation addObject:newVote];
+                    
+                    [eventParse saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+                        if (completionBlock) {
+                            completionBlock(succeeded, &error);
+                        }
+                    }];
+                }
+            }];
+        }
+        else {
+            // A vote already exists for this user...
+            if (completionBlock) {
+                completionBlock(NO, &error);
+            }
+        }
+    }];
+}
+
 @end

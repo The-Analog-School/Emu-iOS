@@ -27,6 +27,9 @@
 }
 
 - (IBAction)voteButtonPressed:(id)sender {
+    if ([self.delegate respondsToSelector:@selector(unscheduledEventCellVoteButtonWasPressed:)]) {
+        [self.delegate unscheduledEventCellVoteButtonWasPressed:self];
+    }
 }
 
 @end

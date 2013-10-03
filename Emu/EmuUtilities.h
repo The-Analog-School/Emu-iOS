@@ -77,6 +77,15 @@ typedef void (^VenueRequestCompletionBlock)(BOOL success, NSError **error, NSArr
 - (void)requestVenuesWithOptions:(NSDictionary *)options
                       completion:(VenueRequestCompletionBlock)completion;
 
+/**
+ *  Adds a vote to an event.
+ *
+ *  @param event
+ *  @param completionBlock
+ */
+- (void)addVoteToEvent:(id<EmuEvent>)event
+            completion:(RequestCompletionBlock)completionBlock;
+
 // TODO: Add some more high-level calls here...
 // Ususally we would be writing tests before we actually implement these.
 
