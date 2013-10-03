@@ -10,6 +10,9 @@
 #import "EmuUtilities.h"
 #import "EmuEvent.h"
 
+#import "UnscheduledEventCell.h"
+#import <AFNetworking/UIImageView+AFNetworking.h>
+
 @interface FeedViewController ()
 @property (nonatomic, strong) NSArray *unscheduledEvents;
 @end
@@ -56,10 +59,19 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"EventCell"];
+    UnscheduledEventCell *cell = [tableView dequeueReusableCellWithIdentifier:@"EventCell"];
     id<EmuEvent> event = [self.unscheduledEvents objectAtIndex:indexPath.row];
     
-    cell.textLabel.text = event.venue.name;
+    [cell.eventImage setImageWithURL:event.venue.photoUrl placeholderImage:[UIImage imageNamed:@""]];
+    cell.eventTitleLabel.text = event.venue.name;
+    cell.eventCreatedUserLabel.text = event.createdUser.fullName;
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    dateFormatter.dateStyle = NSDateFormatterMediumStyle;
+    dateFormatter.timeStyle = NSDateFormatterMediumStyle;
+    cell.eventDateLabel.text = [dateFormatter stringFromDate:event.eventStartDate];
+    
+    cell.eventDescriptionLabel.text = event.eventDescription;
     
     return cell;
 }
