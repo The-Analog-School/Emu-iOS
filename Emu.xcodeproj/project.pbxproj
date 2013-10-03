@@ -17,6 +17,7 @@
 		7429D65117FDA7AF00FE0E48 /* SelectLocationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7429D65017FDA7AF00FE0E48 /* SelectLocationCell.m */; };
 		7429D65317FDA7C200FE0E48 /* SelectLocationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7429D65217FDA7C200FE0E48 /* SelectLocationCell.xib */; };
 		7429D65617FDB44C00FE0E48 /* EditEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7429D65517FDB44C00FE0E48 /* EditEventViewController.m */; };
+		7429D65C17FDBA4F00FE0E48 /* SubmitNewEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7429D65B17FDBA4F00FE0E48 /* SubmitNewEventViewController.m */; };
 		7449933D17FB0B1300EC00C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7449933C17FB0B1300EC00C7 /* Foundation.framework */; };
 		7449933F17FB0B1300EC00C7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7449933E17FB0B1300EC00C7 /* CoreGraphics.framework */; };
 		7449934117FB0B1300EC00C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7449934017FB0B1300EC00C7 /* UIKit.framework */; };
@@ -81,6 +82,8 @@
 		7429D65217FDA7C200FE0E48 /* SelectLocationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectLocationCell.xib; sourceTree = "<group>"; };
 		7429D65417FDB44C00FE0E48 /* EditEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditEventViewController.h; sourceTree = "<group>"; };
 		7429D65517FDB44C00FE0E48 /* EditEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditEventViewController.m; sourceTree = "<group>"; };
+		7429D65A17FDBA4F00FE0E48 /* SubmitNewEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubmitNewEventViewController.h; sourceTree = "<group>"; };
+		7429D65B17FDBA4F00FE0E48 /* SubmitNewEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubmitNewEventViewController.m; sourceTree = "<group>"; };
 		7449933917FB0B1300EC00C7 /* Emu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7449933C17FB0B1300EC00C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7449933E17FB0B1300EC00C7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -176,6 +179,8 @@
 				7409870417FC8B7300FE1AB2 /* SelectEventLocationViewController.m */,
 				7429D65417FDB44C00FE0E48 /* EditEventViewController.h */,
 				7429D65517FDB44C00FE0E48 /* EditEventViewController.m */,
+				7429D65A17FDBA4F00FE0E48 /* SubmitNewEventViewController.h */,
+				7429D65B17FDBA4F00FE0E48 /* SubmitNewEventViewController.m */,
 			);
 			name = "Add Event";
 			sourceTree = "<group>";
@@ -491,6 +496,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7429D65C17FDBA4F00FE0E48 /* SubmitNewEventViewController.m in Sources */,
 				7487169917FB401C00D2CF12 /* SignInViewController.m in Sources */,
 				7449935317FB0B1300EC00C7 /* EmuTabBarController.m in Sources */,
 				7449934D17FB0B1300EC00C7 /* AppDelegate.m in Sources */,

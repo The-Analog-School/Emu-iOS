@@ -37,9 +37,11 @@
         return;
     }
     
+    // TODO: Move this to a UserUtils class...
+    
     PFUser *newUser = [PFUser user];
-    newUser.username = @"chris";
-    newUser.password = @"password";
+    newUser.username = self.usernameField.text;
+    newUser.password = self.passwordField.text;
     [newUser setObject:self.firstNameField.text forKey:@"firstName"];
     [newUser setObject:self.lastNameField.text forKey:@"lastName"];
     

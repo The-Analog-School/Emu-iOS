@@ -63,6 +63,16 @@
 
 #pragma mark - Emu API
 
+- (id<EmuEvent>)eventObjectWithVenue:(id<EmuVenue>)venue
+                                user:(id<EmuUser>)user
+{
+    EmuEventParse *newEvent = [[EmuEventParse alloc] init];
+    newEvent.venue = venue;
+    newEvent.createdUser = user;
+    
+    return newEvent;
+}
+
 - (void)requestUnscheduledEventsWithOptions:(NSDictionary *)options
                                  completion:(EventRequestCompletionBlock)completionBlock
 {
