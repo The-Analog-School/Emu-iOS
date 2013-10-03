@@ -15,8 +15,8 @@
 @dynamic phoneNumber;
 @dynamic email;
 @dynamic rating;
-@synthesize websiteUrl;
-@synthesize photoUrl;
+@synthesize websiteUrl = _websiteUrl;
+@synthesize photoUrl = _photoUrl;
 @synthesize photo = _photo;
 @synthesize location = _location;
 @dynamic totalTimesVisited;
@@ -65,6 +65,16 @@
 {
     PFGeoPoint *geoPoint = [PFGeoPoint geoPointWithLocation:location];
     [self setObject:geoPoint forKey:@"location"];
+}
+
+- (NSURL *)photoUrl
+{
+    return [NSURL URLWithString:[self objectForKey:@"photoUrl"]];
+}
+
+- (void)setPhotoUrl:(NSURL *)photoUrl
+{
+    [self setObject:[photoUrl absoluteString] forKey:@"photoUrl"];
 }
 
 @end
