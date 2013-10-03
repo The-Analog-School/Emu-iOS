@@ -34,15 +34,6 @@
                            animated:YES
                          completion:nil];
     }
-    else {
-        PFObject *photo = [PFObject objectWithClassName:@"Photo"];
-        [photo setObject:@"some name" forKey:@"photoName"];
-        [photo setObject:@2 forKey:@"totalLikes"];
-        [photo setObject:currentUser forKey:@"user"];
-        [photo saveInBackground];
-        
-        [currentUser saveInBackground];
-    }
     
     NSLog(@"User %@", currentUser);
 }

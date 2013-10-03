@@ -70,7 +70,9 @@
     newEvent.venue = venue;
     newEvent.createdUser = user;
     
-    return newEvent;
+    self.eventToSubmit = newEvent;
+    
+    return self.eventToSubmit;
 }
 
 - (void)requestUnscheduledEventsWithOptions:(NSDictionary *)options

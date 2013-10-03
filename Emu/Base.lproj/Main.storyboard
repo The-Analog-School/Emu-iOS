@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="hKe-mW-TR4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="hKe-mW-TR4">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
@@ -30,10 +30,6 @@
         <scene sceneID="GUv-4P-nR4">
             <objects>
                 <viewController id="jAx-Gc-9kC" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="LTe-sI-bsr"/>
-                        <viewControllerLayoutGuide type="bottom" id="veD-Pg-5hh"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="wHy-kc-orR">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -68,10 +64,6 @@
         <scene sceneID="Nva-3e-wO6">
             <objects>
                 <viewController id="RRj-SV-aoN" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="r7L-4e-KqU"/>
-                        <viewControllerLayoutGuide type="bottom" id="LWH-I4-K01"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="XWL-hZ-dto">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -106,10 +98,6 @@
         <scene sceneID="8ul-Oe-gO3">
             <objects>
                 <viewController id="yWw-zs-ngp" customClass="AddPresenterViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="OFT-u5-Ihq"/>
-                        <viewControllerLayoutGuide type="bottom" id="h01-Yp-0RG"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="vX9-xv-KiV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -128,15 +116,11 @@
         <scene sceneID="thY-KK-Alj">
             <objects>
                 <viewController id="6qS-1l-zl1" customClass="SelectEventLocationViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="f6w-hT-TSF"/>
-                        <viewControllerLayoutGuide type="bottom" id="GHr-8r-bXj"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kQo-PV-9Ut">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HT6-Vu-syc" customClass="LocationPickerView">
+                            <view contentMode="scaleToFill" id="HT6-Vu-syc" customClass="LocationPickerView">
                                 <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -166,26 +150,29 @@
             </objects>
             <point key="canvasLocation" x="3085" y="143"/>
         </scene>
-        <!--Edit Event View Controller - Edit Event Details-->
+        <!--Edit Event View Controller - Edit Event-->
         <scene sceneID="TiJ-rh-gc1">
             <objects>
                 <viewController id="gns-sQ-loA" customClass="EditEventViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="wQW-mt-FC4"/>
-                        <viewControllerLayoutGuide type="bottom" id="KVH-lA-H1h"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="lNT-DI-BBz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Event Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ql7-Tq-iAU">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ql7-Tq-iAU">
                                 <rect key="frame" x="25" y="89" width="270" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="xEF-Hk-atV">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Fc9-OE-zr0">
+                                <rect key="frame" x="25" y="298" width="270" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" id="xEF-Hk-atV">
                                 <rect key="frame" x="0.0" y="130" width="320" height="162"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <date key="date" timeIntervalSinceReferenceDate="402501306.27297401">
@@ -213,18 +200,18 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
 </data>
                                 </timeZone>
                             </datePicker>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MDg-Rq-oQs">
-                                <rect key="frame" x="0.0" y="300" width="320" height="128"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="MDg-Rq-oQs">
+                                <rect key="frame" x="0.0" y="330" width="320" height="115"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Edit Event Details" id="0Gk-iG-L5k">
+                    <navigationItem key="navigationItem" title="Edit Event" id="0Gk-iG-L5k">
                         <barButtonItem key="rightBarButtonItem" title="Submit" id="CFB-nS-qGG">
                             <connections>
                                 <action selector="submitButtonPressed:" destination="gns-sQ-loA" id="pYq-EN-2Dw"/>
@@ -242,25 +229,25 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
             </objects>
             <point key="canvasLocation" x="3632" y="143"/>
         </scene>
-        <!--View Controller-->
+        <!--Submit New Event View Controller-->
         <scene sceneID="WWo-5f-nHR">
             <objects>
-                <viewController id="PDF-Xp-llU" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="mOa-V7-LU1"/>
-                        <viewControllerLayoutGuide type="bottom" id="eIc-9i-hrF"/>
-                    </layoutGuides>
+                <viewController id="PDF-Xp-llU" customClass="SubmitNewEventViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BQR-dR-nCt">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Submitting..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oh1-y8-fbp">
-                                <rect key="frame" x="103" y="267" width="134" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Submitting..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Oh1-y8-fbp">
+                                <rect key="frame" x="93" y="261" width="134" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" id="7zH-AM-3Fb">
+                                <rect key="frame" x="150" y="296" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -293,10 +280,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <scene sceneID="Y3s-D4-tQ1">
             <objects>
                 <viewController id="P2h-tw-46x" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="gpq-zc-NOl"/>
-                        <viewControllerLayoutGuide type="bottom" id="y9L-qf-wRm"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="7pJ-P0-jOS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -331,15 +314,11 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <scene sceneID="2bn-fe-hbz">
             <objects>
                 <viewController id="tQd-Xv-vcL" customClass="ProfileViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="nCd-HP-O0B"/>
-                        <viewControllerLayoutGuide type="bottom" id="2cO-r9-DaZ"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="0Ri-a9-Pdr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="balloon" translatesAutoresizingMaskIntoConstraints="NO" id="6br-66-WRi">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="balloon" id="6br-66-WRi">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
