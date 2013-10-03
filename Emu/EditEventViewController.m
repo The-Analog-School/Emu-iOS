@@ -35,24 +35,15 @@
     
 	self.event = [[EmuUtilities sharedUtilities] eventToSubmit];
     self.eventName.text = self.event.venue.name;
+    
+    self.datePicker.minimumDate = [NSDate date];
 }
 
 - (IBAction)submitButtonPressed:(id)sender {
-    if ([self.datePicker.date compare:[NSDate date]]) {
-        self.event.eventStartDate = self.datePicker.date;
-        self.event.eventDescription = self.eventDescriptionTextView.text;
-        [self performSegueWithIdentifier:@"Submit" sender:self];
-    }
-    else {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Invalid Date"
-                                                        message:@"Please make sure the date is "
-                                                       delegate:nil
-                                              cancelButtonTitle:@"Shucks"
-                                              otherButtonTitles:nil];
-        [alert show];
-    }
+    self.event.eventStartDate = self.datePicker.date;
+    self.event.eventDescription = self.eventDescriptionTextView.text;
     
-    
+    [self performSegueWithIdentifier:@"Submit" sender:self];
 }
 
 @end
