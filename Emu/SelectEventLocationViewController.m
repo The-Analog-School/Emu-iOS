@@ -24,6 +24,9 @@
 {
     [super viewDidLoad];
 	self.mapAnnotations = [NSMutableArray array];
+    [self.locationPicker setParallaxScrollFactor:0.2];
+    [self.locationPicker setDefaultMapHeight:280.0];
+    [self.locationPicker setShouldCreateHideMapButton:YES];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -40,6 +43,7 @@
                                                   completion:^(BOOL success, NSError *__autoreleasing *error, NSArray *venues) {
                                                       [SVProgressHUD dismiss];
                                                       self.venues = venues;
+                                                      [self.locationPicker.tableView reloadData];
                                                       [self updateMapAndCenterOnAnnotations];
                                                   }];
 }
