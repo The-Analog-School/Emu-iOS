@@ -27,7 +27,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self registerForNotifications];
+    
+    [self enableBackgroundTapToDismissKeyboard];
+    [self registerForKeyboardNotifications];
     
     self.emuImageView.layer.cornerRadius = self.emuImageView.frame.size.width / 2;
     self.emuImageView.layer.borderColor = [[UIColor whiteColor] CGColor];
@@ -35,48 +37,6 @@
     self.emuImageView.clipsToBounds = YES;
     
     self.view.backgroundColor = [UIColor whiteColor];
-    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self
-                                                                                 action:@selector(backgroundWasTapped:)];
-    [self.view addGestureRecognizer:tapGesture];
-}
-
-- (void)registerForNotifications
-{
-    [[NSNotificationCenter defaultCenter] addObserverForName:UIKeyboardWillShowNotification
-                                                      object:nil
-                                                       queue:[NSOperationQueue mainQueue]
-                                                  usingBlock:^(NSNotification *note) {
-                                                      
-                                                      id keyboardData = [[note userInfo] objectForKey:UIKeyboardFrameBeginUserInfoKey];
-                                                      CGSize keyboardSize = [keyboardData CGRectValue].size;
-                                                      
-                                                      [UIView animateWithDuration:0.5
-                                                                            delay:0.0
-                                                                          options:UIViewAnimationOptionCurveEaseInOut
-                                                                       animations:^{
-                                                                           CGRect newFrame = self.view.frame;
-                                                                           newFrame.origin.y -= keyboardSize.height;
-                                                                           self.view.frame = newFrame;
-                                                                       } completion:nil];
-                                                  }];
-    
-    [[NSNotificationCenter defaultCenter] addObserverForName:UIKeyboardWillHideNotification
-                                                      object:nil
-                                                       queue:[NSOperationQueue mainQueue]
-                                                  usingBlock:^(NSNotification *note) {
-                                                      
-                                                      id keyboardData = [[note userInfo] objectForKey:UIKeyboardFrameBeginUserInfoKey];
-                                                      CGSize keyboardSize = [keyboardData CGRectValue].size;
-                                                      
-                                                      [UIView animateWithDuration:0.1
-                                                                            delay:0.0
-                                                                          options:UIViewAnimationOptionCurveEaseInOut
-                                                                       animations:^{
-                                                                           CGRect newFrame = self.view.frame;
-                                                                           newFrame.origin.y += keyboardSize.height;
-                                                                           self.view.frame = newFrame;
-                                                                       } completion:nil];
-                                                  }];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -86,11 +46,6 @@
 }
 
 #pragma mark - Actions
-
-- (void)backgroundWasTapped:(UITapGestureRecognizer *)tapGesture
-{
-    [self.view endEditing:YES];
-}
 
 - (IBAction)signInPressed:(id)sender {
     [self.view endEditing:YES];

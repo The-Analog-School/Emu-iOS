@@ -13,6 +13,7 @@
 
 @dynamic venue;
 @synthesize createdUser = _createdUser;
+@dynamic eventDescription;
 @dynamic votes;
 @dynamic eventStartDate;
 @dynamic eventEndDate;

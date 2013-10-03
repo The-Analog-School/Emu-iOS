@@ -12,6 +12,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *eventName;
 @property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
+@property (weak, nonatomic) IBOutlet UITextView *eventDescriptionTextView;
 
 - (IBAction)submitButtonPressed:(id)sender;
 

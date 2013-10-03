@@ -29,6 +29,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [self enableBackgroundTapToDismissKeyboard];
+    [self registerForKeyboardNotifications];
+    
 	self.event = [[EmuUtilities sharedUtilities] eventToSubmit];
     self.eventName.text = self.event.venue.name;
 }

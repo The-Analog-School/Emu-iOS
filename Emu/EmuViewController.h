@@ -10,4 +10,7 @@
 
 @interface EmuViewController : UIViewController
 
+- (void)enableBackgroundTapToDismissKeyboard;
+- (void)registerForKeyboardNotifications;
+
 @end

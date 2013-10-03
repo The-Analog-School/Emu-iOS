@@ -18,6 +18,7 @@
 @property (nonatomic, strong) id<EmuVenue> venue;
 @property (nonatomic, strong) id<EmuUser> createdUser;
 
+@property (nonatomic, copy) NSString *eventDescription;
 @property (nonatomic, strong) NSSet *votes;
 @property (nonatomic, strong) NSDate *eventStartDate;
 @property (nonatomic, strong) NSDate *eventEndDate;
