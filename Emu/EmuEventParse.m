@@ -7,11 +7,12 @@
 //
 
 #import "EmuEventParse.h"
+#import "EmuUserParse.h"
 
 @implementation EmuEventParse
 
 @dynamic venue;
-@dynamic createdUser;
+@synthesize createdUser = _createdUser;
 @dynamic votes;
 @dynamic eventStartDate;
 @dynamic eventEndDate;
@@ -21,6 +22,20 @@
 + (NSString *)parseClassName
 {
     return @"Event";
+}
+
+- (id<EmuUser>)createdUser
+{
+    EmuUserParse *user = [[EmuUserParse alloc] init];
+    user.parseUser = [self objectForKey:@"createdUser"];
+    
+    return user;
+}
+
+- (void)setCreatedUser:(id<EmuUser>)createdUser
+{
+    EmuUserParse *user = createdUser;
+    [self setObject:user.parseUser forKey:@"createdUser"];
 }
 
 @end
