@@ -81,6 +81,7 @@
     PFQuery *query = [EmuEventParse query];
     [query includeKey:@"venue"];
     [query includeKey:@"createdUser"];
+    [query orderByDescending:@"createdAt"];
     
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         NSLog(@"%@", objects);
