@@ -11,7 +11,7 @@
 @protocol EmuModel <NSObject>
 
 @property (nonatomic, copy) NSString *objectId;
-@property (nonatomic, strong, readonly) NSDate *createdAt;
+@property (nonatomic, strong) NSDate *createdAt;
 @property (nonatomic, strong) NSDate *updatedAt;
 
 @end

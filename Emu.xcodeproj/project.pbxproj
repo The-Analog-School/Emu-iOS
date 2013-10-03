@@ -13,12 +13,12 @@
 		7409870217FC737600FE1AB2 /* FoursquareNetworkCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7409870117FC737600FE1AB2 /* FoursquareNetworkCommunicator.m */; };
 		7409870517FC8B7300FE1AB2 /* SelectEventLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7409870417FC8B7300FE1AB2 /* SelectEventLocationViewController.m */; };
 		7409870917FCAD0900FE1AB2 /* keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7409870617FCA55500FE1AB2 /* keys.plist */; };
-		7409870B17FCB9F600FE1AB2 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7409870A17FCB9F600FE1AB2 /* Parse.framework */; };
 		7429D65117FDA7AF00FE0E48 /* SelectLocationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7429D65017FDA7AF00FE0E48 /* SelectLocationCell.m */; };
 		7429D65317FDA7C200FE0E48 /* SelectLocationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7429D65217FDA7C200FE0E48 /* SelectLocationCell.xib */; };
 		7429D65617FDB44C00FE0E48 /* EditEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7429D65517FDB44C00FE0E48 /* EditEventViewController.m */; };
 		7429D65C17FDBA4F00FE0E48 /* SubmitNewEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7429D65B17FDBA4F00FE0E48 /* SubmitNewEventViewController.m */; };
 		7429D65F17FDC4A900FE0E48 /* AddPresenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7429D65E17FDC4A900FE0E48 /* AddPresenterViewController.m */; };
+		7429D66117FDE58700FE0E48 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7429D66017FDE58700FE0E48 /* Parse.framework */; };
 		7449933D17FB0B1300EC00C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7449933C17FB0B1300EC00C7 /* Foundation.framework */; };
 		7449933F17FB0B1300EC00C7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7449933E17FB0B1300EC00C7 /* CoreGraphics.framework */; };
 		7449934117FB0B1300EC00C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7449934017FB0B1300EC00C7 /* UIKit.framework */; };
@@ -77,7 +77,6 @@
 		7409870317FC8B7300FE1AB2 /* SelectEventLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectEventLocationViewController.h; sourceTree = "<group>"; };
 		7409870417FC8B7300FE1AB2 /* SelectEventLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectEventLocationViewController.m; sourceTree = "<group>"; };
 		7409870617FCA55500FE1AB2 /* keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = keys.plist; sourceTree = "<group>"; };
-		7409870A17FCB9F600FE1AB2 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		7429D64F17FDA7AF00FE0E48 /* SelectLocationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectLocationCell.h; sourceTree = "<group>"; };
 		7429D65017FDA7AF00FE0E48 /* SelectLocationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectLocationCell.m; sourceTree = "<group>"; };
 		7429D65217FDA7C200FE0E48 /* SelectLocationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectLocationCell.xib; sourceTree = "<group>"; };
@@ -87,6 +86,7 @@
 		7429D65B17FDBA4F00FE0E48 /* SubmitNewEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubmitNewEventViewController.m; sourceTree = "<group>"; };
 		7429D65D17FDC4A900FE0E48 /* AddPresenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPresenterViewController.h; sourceTree = "<group>"; };
 		7429D65E17FDC4A900FE0E48 /* AddPresenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPresenterViewController.m; sourceTree = "<group>"; };
+		7429D66017FDE58700FE0E48 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		7449933917FB0B1300EC00C7 /* Emu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7449933C17FB0B1300EC00C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7449933E17FB0B1300EC00C7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -155,7 +155,7 @@
 				748716B217FB4CD900D2CF12 /* StoreKit.framework in Frameworks */,
 				748716B317FB4CD900D2CF12 /* SystemConfiguration.framework in Frameworks */,
 				7449933F17FB0B1300EC00C7 /* CoreGraphics.framework in Frameworks */,
-				7409870B17FCB9F600FE1AB2 /* Parse.framework in Frameworks */,
+				7429D66117FDE58700FE0E48 /* Parse.framework in Frameworks */,
 				7449934117FB0B1300EC00C7 /* UIKit.framework in Frameworks */,
 				7449933D17FB0B1300EC00C7 /* Foundation.framework in Frameworks */,
 				BD45C3B116E743658ECDBB1F /* libPods.a in Frameworks */,
@@ -234,7 +234,7 @@
 		7449933B17FB0B1300EC00C7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7409870A17FCB9F600FE1AB2 /* Parse.framework */,
+				7429D66017FDE58700FE0E48 /* Parse.framework */,
 				748716A217FB4CD900D2CF12 /* AudioToolbox.framework */,
 				748716A317FB4CD900D2CF12 /* CFNetwork.framework */,
 				748716A417FB4CD900D2CF12 /* CoreLocation.framework */,

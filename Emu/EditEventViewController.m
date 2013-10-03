@@ -38,11 +38,21 @@
 }
 
 - (IBAction)submitButtonPressed:(id)sender {
-    // TODO: Capture date and any other fields.
+    if ([self.datePicker.date compare:[NSDate date]]) {
+        self.event.eventStartDate = self.datePicker.date;
+        self.event.eventDescription = self.eventDescriptionTextView.text;
+        [self performSegueWithIdentifier:@"Submit" sender:self];
+    }
+    else {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Invalid Date"
+                                                        message:@"Please make sure the date is "
+                                                       delegate:nil
+                                              cancelButtonTitle:@"Shucks"
+                                              otherButtonTitles:nil];
+        [alert show];
+    }
     
-    // TODO: Validate fields
     
-    [self performSegueWithIdentifier:@"Submit" sender:self];
 }
 
 @end

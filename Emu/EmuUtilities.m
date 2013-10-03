@@ -85,7 +85,13 @@
                    withOptions:(NSDictionary *)options
                     completion:(RequestCompletionBlock)completionBlock
 {
+    EmuEventParse *eventParse = (EmuEventParse *)event;
     
+    [eventParse saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        if (completionBlock) {
+            completionBlock(succeeded, &error);
+        }
+    }];
 }
 
 - (void)requestVenuesWithOptions:(NSDictionary *)options

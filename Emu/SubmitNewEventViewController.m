@@ -40,7 +40,7 @@
 {
     [super viewDidAppear:animated];
     
-    [[EmuUtilities sharedUtilities] createUnscheduledEvent:nil
+    [[EmuUtilities sharedUtilities] createUnscheduledEvent:[[EmuUtilities sharedUtilities] eventToSubmit]
                                                withOptions:nil
                                                 completion:^(BOOL success, NSError *__autoreleasing *error) {
                                                     [self dismissViewControllerAnimated:YES
