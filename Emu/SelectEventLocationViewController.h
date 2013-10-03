@@ -6,11 +6,12 @@
 //  Copyright (c) 2013 Mobiquity. All rights reserved.
 //
 
-#import "EmuViewController.h"
 #import <MapKit/MapKit.h>
+#import "EmuViewController.h"
+#import "LocationPickerView.h"
 
-@interface SelectEventLocationViewController : EmuViewController <MKMapViewDelegate>
+@interface SelectEventLocationViewController : EmuViewController <LocationPickerViewDelegate, MKMapViewDelegate, UITableViewDataSource, UITableViewDelegate>
 
-@property (weak, nonatomic) IBOutlet MKMapView *mapView;
+@property (weak, nonatomic) IBOutlet LocationPickerView *locationPicker;
 
 @end

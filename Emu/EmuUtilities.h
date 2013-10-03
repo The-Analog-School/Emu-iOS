@@ -29,6 +29,23 @@ typedef void (^VenueRequestCompletionBlock)(BOOL success, NSError **error, NSArr
 #pragma mark - Emu API
 
 /**
+ *  This is the event that is currently being submitted.
+ */
+@property (nonatomic, strong) id<EmuEvent> eventToSubmit;
+
+/**
+ *  Creates a new event object with a user and venue. This gets
+ *  set to the eventToSubmit property.
+ *
+ *  @param venue Event venue
+ *  @param user  User that created the event
+ *
+ *  @return New event object.
+ */
+- (id<EmuEvent>)eventObjectWithVenue:(id<EmuVenue>)venue
+                    user:(id<EmuUser>)user;
+
+/**
  *  Fetches the most recent list of unscheduled events from the backend.
  *  Options can optionally be passed in to filter the results.
  *

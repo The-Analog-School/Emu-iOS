@@ -95,7 +95,7 @@
 - (IBAction)signInPressed:(id)sender {
     [self.view endEditing:YES];
     
-    [PFUser logInWithUsernameInBackground:self.usernameField.text
+    [PFUser logInWithUsernameInBackground:[self.usernameField.text lowercaseString]
                                  password:self.passwordField.text
                                     block:^(PFUser *user, NSError *error) {
                                         [self dismissViewControllerAnimated:YES completion:nil];

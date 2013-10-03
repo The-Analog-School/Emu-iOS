@@ -11,7 +11,6 @@
 #import <CoreLocation/CoreLocation.h>
 
 NSString * const BASE_API_URL = @"https://api.foursquare.com/";
-NSString * const API_KEYS = @"client_id=&client_secret=&v=20131002";
 
 @implementation FoursquareNetworkCommunicator
 
@@ -24,7 +23,10 @@ NSString * const API_KEYS = @"client_id=&client_secret=&v=20131002";
     NSMutableString *urlString = [BASE_API_URL mutableCopy];
     [urlString appendString:@"v2/venues/explore"];
     [urlString appendFormat:@"?ll=%0.2f,%0.2f&limit=20&venuePhotos=1", location.coordinate.latitude, location.coordinate.longitude];
-    [urlString appendFormat:@"&%@", API_KEYS];
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"keys" ofType:@"plist"];
+    NSDictionary *keys = [NSDictionary dictionaryWithContentsOfFile:path];
+    [urlString appendFormat:@"&client_id=%@&client_secret=%@&v=20131002", keys[@"foursquare-client-id"], keys[@"foursquare-secret"]];
     
     NSURL *url = [NSURL URLWithString:urlString];
     NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:url];

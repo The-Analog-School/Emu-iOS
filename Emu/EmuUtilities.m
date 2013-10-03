@@ -32,7 +32,6 @@
     
     NSString *path = [[NSBundle mainBundle] pathForResource:@"keys" ofType:@"plist"];
     NSDictionary *keys = [NSDictionary dictionaryWithContentsOfFile:path];
-    [keys objectForKey:@"parse-app-id"];
     
     [Parse setApplicationId:[keys objectForKey:@"parse-app-id"]
                   clientKey:[keys objectForKey:@"parse-client-key"]];
