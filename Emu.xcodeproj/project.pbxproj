@@ -20,6 +20,7 @@
 		7429D65F17FDC4A900FE0E48 /* AddPresenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7429D65E17FDC4A900FE0E48 /* AddPresenterViewController.m */; };
 		7429D66117FDE58700FE0E48 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7429D66017FDE58700FE0E48 /* Parse.framework */; };
 		7429D66417FDF4F200FE0E48 /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7429D66317FDF4F200FE0E48 /* FeedViewController.m */; };
+		7429D66717FDF72400FE0E48 /* UnscheduledEventCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7429D66617FDF72400FE0E48 /* UnscheduledEventCell.m */; };
 		7449933D17FB0B1300EC00C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7449933C17FB0B1300EC00C7 /* Foundation.framework */; };
 		7449933F17FB0B1300EC00C7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7449933E17FB0B1300EC00C7 /* CoreGraphics.framework */; };
 		7449934117FB0B1300EC00C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7449934017FB0B1300EC00C7 /* UIKit.framework */; };
@@ -90,6 +91,8 @@
 		7429D66017FDE58700FE0E48 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		7429D66217FDF4F200FE0E48 /* FeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedViewController.h; sourceTree = "<group>"; };
 		7429D66317FDF4F200FE0E48 /* FeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedViewController.m; sourceTree = "<group>"; };
+		7429D66517FDF72400FE0E48 /* UnscheduledEventCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnscheduledEventCell.h; sourceTree = "<group>"; };
+		7429D66617FDF72400FE0E48 /* UnscheduledEventCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnscheduledEventCell.m; sourceTree = "<group>"; };
 		7449933917FB0B1300EC00C7 /* Emu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7449933C17FB0B1300EC00C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7449933E17FB0B1300EC00C7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -196,6 +199,8 @@
 		7429D65817FDB46300FE0E48 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7429D66517FDF72400FE0E48 /* UnscheduledEventCell.h */,
+				7429D66617FDF72400FE0E48 /* UnscheduledEventCell.m */,
 				7429D64F17FDA7AF00FE0E48 /* SelectLocationCell.h */,
 				7429D65017FDA7AF00FE0E48 /* SelectLocationCell.m */,
 				7429D65217FDA7C200FE0E48 /* SelectLocationCell.xib */,
@@ -525,6 +530,7 @@
 				7429D66417FDF4F200FE0E48 /* FeedViewController.m in Sources */,
 				7487169D17FB40E100D2CF12 /* EmuViewController.m in Sources */,
 				7409870217FC737600FE1AB2 /* FoursquareNetworkCommunicator.m in Sources */,
+				7429D66717FDF72400FE0E48 /* UnscheduledEventCell.m in Sources */,
 				748716C417FB6CCA00D2CF12 /* EmuUserParse.m in Sources */,
 				7487168D17FB39F800D2CF12 /* ProfileViewController.m in Sources */,
 			);
