@@ -78,7 +78,16 @@
 - (void)requestUnscheduledEventsWithOptions:(NSDictionary *)options
                                  completion:(EventRequestCompletionBlock)completionBlock
 {
+    PFQuery *query = [EmuEventParse query];
+    [query includeKey:@"venue"];
+    [query includeKey:@"createdUser"];
     
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        NSLog(@"%@", objects);
+        if (completionBlock) {
+            completionBlock(YES, &error, objects);
+        }
+    }];
 }
 
 - (void)createUnscheduledEvent:(id<EmuEvent>)event

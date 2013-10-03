@@ -26,16 +26,40 @@
             </objects>
             <point key="canvasLocation" x="513" y="143"/>
         </scene>
-        <!--View Controller - Feed-->
+        <!--Feed View Controller - Feed-->
         <scene sceneID="GUv-4P-nR4">
             <objects>
-                <viewController id="jAx-Gc-9kC" sceneMemberID="viewController">
+                <viewController id="jAx-Gc-9kC" customClass="FeedViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wHy-kc-orR">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="jGe-ES-cli">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventCell" id="tcm-8h-Efw">
+                                        <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tcm-8h-Efw" id="MOV-CO-jxM">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="jAx-Gc-9kC" id="bAm-0o-gOK"/>
+                                    <outlet property="delegate" destination="jAx-Gc-9kC" id="nbq-GZ-JJ8"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Feed" id="pCp-JB-TjW"/>
+                    <connections>
+                        <outlet property="tableView" destination="jGe-ES-cli" id="qXU-fT-TW4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="So5-fh-Jdx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

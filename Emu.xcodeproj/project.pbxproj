@@ -19,6 +19,7 @@
 		7429D65C17FDBA4F00FE0E48 /* SubmitNewEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7429D65B17FDBA4F00FE0E48 /* SubmitNewEventViewController.m */; };
 		7429D65F17FDC4A900FE0E48 /* AddPresenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7429D65E17FDC4A900FE0E48 /* AddPresenterViewController.m */; };
 		7429D66117FDE58700FE0E48 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7429D66017FDE58700FE0E48 /* Parse.framework */; };
+		7429D66417FDF4F200FE0E48 /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7429D66317FDF4F200FE0E48 /* FeedViewController.m */; };
 		7449933D17FB0B1300EC00C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7449933C17FB0B1300EC00C7 /* Foundation.framework */; };
 		7449933F17FB0B1300EC00C7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7449933E17FB0B1300EC00C7 /* CoreGraphics.framework */; };
 		7449934117FB0B1300EC00C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7449934017FB0B1300EC00C7 /* UIKit.framework */; };
@@ -87,6 +88,8 @@
 		7429D65D17FDC4A900FE0E48 /* AddPresenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPresenterViewController.h; sourceTree = "<group>"; };
 		7429D65E17FDC4A900FE0E48 /* AddPresenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPresenterViewController.m; sourceTree = "<group>"; };
 		7429D66017FDE58700FE0E48 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		7429D66217FDF4F200FE0E48 /* FeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedViewController.h; sourceTree = "<group>"; };
+		7429D66317FDF4F200FE0E48 /* FeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedViewController.m; sourceTree = "<group>"; };
 		7449933917FB0B1300EC00C7 /* Emu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7449933C17FB0B1300EC00C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7449933E17FB0B1300EC00C7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -318,6 +321,8 @@
 			children = (
 				7487169B17FB40E100D2CF12 /* EmuViewController.h */,
 				7487169C17FB40E100D2CF12 /* EmuViewController.m */,
+				7429D66217FDF4F200FE0E48 /* FeedViewController.h */,
+				7429D66317FDF4F200FE0E48 /* FeedViewController.m */,
 				7487169E17FB422400D2CF12 /* Navigation */,
 				7487169F17FB422B00D2CF12 /* Sign In */,
 				7429D65717FDB45400FE0E48 /* Add Event */,
@@ -517,6 +522,7 @@
 				740986FC17FBE9F200FE1AB2 /* EmuVenueParse.m in Sources */,
 				748716B917FB58F800D2CF12 /* EmuUtilities.m in Sources */,
 				7487169A17FB401C00D2CF12 /* SignUpViewController.m in Sources */,
+				7429D66417FDF4F200FE0E48 /* FeedViewController.m in Sources */,
 				7487169D17FB40E100D2CF12 /* EmuViewController.m in Sources */,
 				7409870217FC737600FE1AB2 /* FoursquareNetworkCommunicator.m in Sources */,
 				748716C417FB6CCA00D2CF12 /* EmuUserParse.m in Sources */,
