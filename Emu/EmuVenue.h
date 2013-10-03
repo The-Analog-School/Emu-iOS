@@ -19,6 +19,8 @@
 @property (nonatomic, copy) NSString *email;
 @property (nonatomic) CGFloat rating;
 @property (nonatomic, strong) NSURL *websiteUrl;
+@property (nonatomic, strong) NSURL *photoUrl;
+@property (nonatomic, strong) UIImage *photo;
 @property (nonatomic, strong) CLLocation *location;
 @property (nonatomic) NSInteger totalTimesVisited;
 

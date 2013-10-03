@@ -10,6 +10,8 @@
 #import "EmuUtilities.h"
 #import "SelectLocationCell.h"
 
+#import <AFNetworking/UIImageView+AFNetworking.h>
+
 @interface SelectEventLocationViewController ()
 
 @property (nonatomic, strong) id<EmuVenue> selectedVenue;
@@ -91,6 +93,7 @@
     cell.venueTypeLabel.text = @"Type n/a";
     cell.venueImageView.layer.cornerRadius = 3.0;
     cell.venueImageView.clipsToBounds = YES;
+    [cell.venueImageView setImageWithURL:venue.photoUrl];
     
     return cell;
 }

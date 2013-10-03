@@ -15,7 +15,9 @@
 @dynamic phoneNumber;
 @dynamic email;
 @dynamic rating;
-@dynamic websiteUrl;
+@synthesize websiteUrl;
+@synthesize photoUrl;
+@synthesize photo = _photo;
 @synthesize location = _location;
 @dynamic totalTimesVisited;
 
@@ -30,6 +32,20 @@
     newVenue.foursquareId = [jsonData objectForKey:@"id"];
     newVenue.name = [jsonData objectForKey:@"name"];
     newVenue.rating = [[jsonData objectForKey:@"rating"] floatValue];
+    
+    // Parse out photo url
+    NSArray *photoGroups = [[jsonData objectForKey:@"photos"] objectForKey:@"groups"];
+    if (photoGroups.count) {
+        NSDictionary *firstPhotoGroup = [photoGroups firstObject];
+        if (firstPhotoGroup.count) {
+            NSArray *photoItems = [firstPhotoGroup objectForKey:@"items"];
+            if (photoItems.count) {
+                NSDictionary *firstPhoto = [photoItems firstObject];
+                NSString *photoUrlString = [NSString stringWithFormat:@"%@/100x100/%@", [firstPhoto objectForKey:@"prefix"], [firstPhoto objectForKey:@"suffix"]];
+                newVenue.photoUrl = [NSURL URLWithString:photoUrlString];
+            }
+        }
+    }
     
     NSDictionary *locationJSON = [jsonData objectForKey:@"location"];
     CGFloat latitude = [[locationJSON objectForKey:@"lat"] floatValue];
