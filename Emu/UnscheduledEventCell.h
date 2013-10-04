@@ -25,6 +25,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *eventTitleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *eventDateLabel;
 @property (weak, nonatomic) IBOutlet UILabel *eventCreatedUserLabel;
+@property (weak, nonatomic) IBOutlet UILabel *weatherLabel;
 @property (weak, nonatomic) IBOutlet UILabel *eventDescriptionLabel;
 @property (weak, nonatomic) IBOutlet UIButton *voteButton;
 

@@ -9,7 +9,7 @@
 #import "EmuViewController.h"
 #import "UnscheduledEventCell.h"
 
-@interface FeedViewController : EmuViewController <UnscheduledEventCellDelegate>
+@interface FeedViewController : EmuViewController <UnscheduledEventCellDelegate, NSURLConnectionDataDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 

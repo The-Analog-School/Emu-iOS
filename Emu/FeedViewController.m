@@ -12,6 +12,7 @@
 #import <SVProgressHUD.h>
 
 #import <AFNetworking/UIImageView+AFNetworking.h>
+#import <AFNetworking/AFNetworking.h>
 
 @interface FeedViewController ()
 
@@ -99,6 +100,38 @@
     cell.eventDateLabel.text = [dateFormatter stringFromDate:event.eventStartDate];
     
     cell.eventDescriptionLabel.text = event.eventDescription;
+    
+    /**
+    NSString *urlString = [NSString stringWithFormat:@""];
+    NSURL *url = [NSURL URLWithString:urlString];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    
+    // Apple Old Way
+    [NSURLConnection connectionWithRequest:request delegate:self];
+    
+    // Apple New Way
+    [NSURLConnection sendAsynchronousRequest:request
+                                       queue:[NSOperationQueue mainQueue]
+                           completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
+                               
+                           }];
+    
+    // AFNetworking Way
+    AFHTTPRequestOperation *requestOperation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
+    [requestOperation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+    }];
+    [requestOperation start];
+    
+    // Mobiquity Way
+    MobMSNetworkCallJSON *jsonCall = [[MobMSNetworkCallJSON alloc] init];
+    [jsonCall setRequestURL:url];
+    [jsonCall executeAsyncWithSuccessBlock:^{
+        JSON = jsonCall.responseJSON;
+    }];
+    */
     
     return cell;
 }
